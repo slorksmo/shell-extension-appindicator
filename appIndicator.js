@@ -43,7 +43,7 @@ Gio._promisify(Gio.DBusConnection.prototype, 'call');
 const MAX_UPDATE_FREQUENCY = 30; // In ms
 const FALLBACK_ICON_NAME = 'image-loading-symbolic';
 const PIXMAPS_FORMAT = imports.gi.Cogl.PixelFormat.ARGB_8888;
-const GNOME_48_PLUS = Number(Config.PACKAGE_VERSION.split(".")[0]) >= 48;
+const GNOME_48_PLUS = Number(Config.PACKAGE_VERSION.split('.')[0]) >= 48;
 
 export const SNICategory = Object.freeze({
     APPLICATION: 'ApplicationStatus',
