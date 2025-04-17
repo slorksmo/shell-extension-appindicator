@@ -130,10 +130,9 @@ class AppIndicatorProxy extends DBusProxy {
 
     destroy() {
         const cachedProperties = this.get_cached_property_names();
-        if (cachedProperties) {
+        if (cachedProperties) 
             cachedProperties.forEach(propertyName =>
                 this.set_cached_property(propertyName, null));
-        }
 
         super.destroy();
     }
